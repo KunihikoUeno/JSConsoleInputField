@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Console.log Input Field</title>
+</head>
+<body>
+<div>
+  <input type="text" id="box" style="margin-bottom: 8px;" />
+  <button id="execute">Run</button>
+  <button id="clear">Clear</button>
+  <div id="output" style="font-size: 12px;">Output</div>
+</div>
+<script>
+document.getElementById('execute').onclick = function() {
+  eval(document.getElementById("box").value);
+  console.log = function() {
+    document.getElementById("output").innerHTML = [].join.call(arguments, " ");
+  };
+}
+document.getElementById('clear').onclick = function() {
+  document.getElementById('box').value = '';
+  document.getElementById('output').innerHTML = '';
+}
+</script>
+</body>
+</html>
