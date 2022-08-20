@@ -4,5 +4,5 @@
 
 When you work on embedded webpages in an application which doesn't give you a chance to run a developer tool, it makes debbuging so hard.
 
-Insert HTML and JS code in to your page, and you can run some JS code.
+In that case, you can insert this HTML and JS code in to your page, and you can run some JavaScript code.
 
